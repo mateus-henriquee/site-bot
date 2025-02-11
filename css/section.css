@@ -77,6 +77,11 @@ section span {
     gap: 1em;
 }
 
+.buttons-container a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .buttons-row {
     display: flex;
     gap: 1em;
