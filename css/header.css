@@ -1,0 +1,38 @@
+header,
+header a {
+    color: #fff;
+    background-color: #c5435a;
+    padding: 0.5em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-decoration: none;
+    font-size: 15px;
+    flex-flow: wrap;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+header {
+    width: 100%;
+}
+
+header a {
+    height: 100%;
+}
+
+header img {
+    margin-right: 0.7em;
+    width: 1.3em;
+    height: 1.25em;
+}
+
+header a:hover {
+    border-left: solid #fff 1px;
+    border-right: solid #fff 1px;
+    transition: all 0.5s;
+    height: 100%;
+    transform: scale(1.1);
+}

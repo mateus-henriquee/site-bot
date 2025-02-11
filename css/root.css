@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #e44e6a #c5435a;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", serif;
+}
