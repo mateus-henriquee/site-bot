@@ -8,16 +8,19 @@
 
     <link rel="shortcut icon" href="/assets/fav.jpg" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/section.css">
+    <link rel="stylesheet" href="/css/features.css">
 
 </head>
 
 <body>
     <header>
 
-        <a href="#"> MatMindAI </a>
+        <a href="#" class="logo"> MatMindAI </a>
         <a href="#suporte"> <img src="/assets/discord.png"> SUPORTE </a>
         <a href="#wiki"> <img src="/assets/book.png"> WIKI </a>
         <a href="#presente"> <img src="/assets/gift.png"> GIFT's </a>
@@ -30,18 +33,60 @@
     <section>
         <div class="home">
             <h1> Olá, eu sou o </h1>
-            <span style="color: #a6374b;"> MatMindAI </span>
+            <span> MatMindAI </span>
             <p> Apenas um bot, mas prometo ser o melhor amigo que seu servidor já teve! </p>
 
             <div class="buttons-container">
                 <div class="buttons-row">
                     <button class="button">+ Adicione-me</button>
-                    <button class="button"> ⭐ Saiba Mais </button>
+                    <button class="button"> ★ Saiba Mais </button>
                 </div>
                 <button class="button"> ⚙ Painel De Controle </button>
             </div>
+
+            <div class="arrow-down" onclick="scrollToNextSection()">
+                >
+            </div>
         </div>
     </section>
+
+    </div>
+    </section>
+
+    <div class="features-section" id="next-section">
+        <h2>Recursos Incríveis</h2>
+        <p>Descubra tudo o que nosso bot pode fazer por você!</p>
+        <div class="features-grid">
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-gamepad"></i></div>
+                <h3>Diversão Garantida</h3>
+                <p>Comandos de jogos, memes e muito mais para manter seu servidor ativo e divertido.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Moderação Eficiente</h3>
+                <p>Ferramentas de moderação para manter seu servidor seguro e organizado.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-music"></i></div>
+                <h3>Música de Qualidade</h3>
+                <p>Reproduza músicas diretamente do YouTube, Spotify e outras plataformas.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                <h3>Personalização</h3>
+                <p>Configure o bot do seu jeito, com comandos e respostas personalizadas.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/scroll-arrow.js"></script>
 </body>
 
 </html>

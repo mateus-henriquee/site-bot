@@ -1,0 +1,80 @@
+.features-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.features-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    background-color: #a6374b;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #c9435e;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.feature-card p,
+.feature-card h3 {
+    cursor: pointer;
+}
+
+.feature-card:hover .feature-icon {
+    color: #fff;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover h3 {
+    color: #fff;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover p {
+    color: #fff;
+}

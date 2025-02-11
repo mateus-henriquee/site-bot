@@ -1,13 +1,13 @@
 section {
-    background-image: url('/assets/thumb.png'); /* Caminho corrigido */
+    background-image: url('/assets/thumb.png');
     width: 100%;
     height: 50em;
-    min-height: 12em; /* Altura mínima */
+    min-height: 12em;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white; /* Cor do texto para contraste */
-    text-align: center; /* Alinhamento do texto */
+    color: white;
+    text-align: center; 
     padding: 20px;
     font-family: "Permanent Marker", serif;
     font-weight: 400;
@@ -18,7 +18,7 @@ section {
     font-style: normal;
     background-color: #2b1a1ade;
     background-blend-mode: multiply;
-    overflow: hidden; /* Para esconder o conteúdo que sai da tela */
+    overflow: hidden;
 }
 
 section span {
@@ -29,7 +29,19 @@ section span {
 .home {
     width: 47%;
     font-size: 2em;
-    margin-bottom: 2em; /* Espaço entre o texto e os botões */
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home span {
+    color: #d24660;
+}
+
+.home p {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 .home h1, .home span, .home p {
@@ -74,7 +86,7 @@ section span {
     background-color: #a6374b;
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 0.56vh;
     font-size: 1em;
     font-family: "Permanent Marker", serif;
     border-radius: 50px;
@@ -110,4 +122,31 @@ section span {
 .button:active {
     transform: translateY(0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-down {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    animation: float 1.5s infinite ease-in;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: rotate(90deg) translateX(0);
+    }
+    50% {
+        transform: rotate(90deg) translateX(-10px);
+    }
+}
+
+#next-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+    margin-top: 50px;
 }

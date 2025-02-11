@@ -2,8 +2,8 @@ header,
 header a {
     color: #fff;
     background-color: #c5435a;
-    padding: 0.5em;
     height: 100%;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,9 @@ header a {
     flex-direction: row;
 }
 
-header {
-    width: 100%;
+header .logo {
+    font-size: 3vh;
+    font-family: "Permanent Marker", serif;
 }
 
 header a {
@@ -30,8 +31,7 @@ header img {
 }
 
 header a:hover {
-    border-left: solid #fff 1px;
-    border-right: solid #fff 1px;
+    background-color: #b63f54;
     transition: all 0.5s;
     height: 100%;
     transform: scale(1.1);
