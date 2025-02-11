@@ -1,43 +1,39 @@
-Aqui está um exemplo de um arquivo `README.md` para o seu projeto no GitHub. Ele descreve o projeto, como configurá-lo e executá-lo, e inclui informações sobre as tecnologias utilizadas e como contribuir.
-
-```markdown
-# MatMindAI - Site de Apresentação
+# 📑 MatMindAI - Site de Apresentação
 
 Bem-vindo ao repositório do **MatMindAI**, um site de apresentação moderno e animado para um bot fictício chamado MatMindAI. Este projeto foi desenvolvido com HTML e CSS, utilizando animações suaves e design responsivo.
 
-![Preview do Site](assets/preview.png) <!-- Adicione uma imagem de preview se possível -->
+![Preview do Site](assets/site-preview.png) <!-- Adicione uma imagem de preview se possível -->
 
-## 🚀 Como Executar o Projeto
+# 🚀 Como Executar o Projeto
 
 Siga os passos abaixo para rodar o projeto localmente:
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/matmindai-site.git
+   git clone https://github.com/mateus-henriquee/site-bot
    ```
 
 2. **Navegue até a pasta do projeto**:
    ```bash
-   cd matmindai-site
+   cd site-bot
    ```
 
-3. **Abra o arquivo `index.html`**:
+3. **Abra o arquivo nó código**:
+   ```bash
+   code .
+   ```
+
+4. **Abra o arquivo `index.html`**:
    - Basta abrir o arquivo `index.html` no seu navegador favorito.
 
-   Ou, se preferir, utilize um servidor local:
-   ```bash
-   python -m http.server 8000
-   ```
-   Em seguida, acesse `http://localhost:8000` no navegador.
-
-## 🛠 Tecnologias Utilizadas
+# 🛠 Tecnologias Utilizadas
 
 - **HTML**: Estrutura do site.
 - **CSS**: Estilização e animações.
 - **Google Fonts**: Fonte `Permanent Marker` para o design do texto.
 - **Flexbox**: Layout responsivo e alinhamento dos elementos.
 
-## ✨ Funcionalidades
+# ✨ Funcionalidades
 
 - **Animação de Entrada**: Os elementos de texto (`h1`, `span` e `p`) aparecem sequencialmente com uma animação de deslize da direita para a esquerda.
 - **Botões Interativos**: Três botões estilizados com animações modernas ao passar o mouse.
@@ -45,14 +41,14 @@ Siga os passos abaixo para rodar o projeto localmente:
   - Efeito de "entortar" para a direita ao interagir.
 - **Design Responsivo**: Layout adaptável para diferentes tamanhos de tela.
 
-## 🎨 Personalização
+# 🎨 Personalização
 
 Você pode personalizar o site alterando os seguintes arquivos:
 
 - **`index.html`**: Modifique o conteúdo do site.
 - **`style.css`**: Altere as cores, animações e estilos.
 
-## 🤝 Como Contribuir
+# 🤝 Como Contribuir
 
 Contribuições são bem-vindas! Siga os passos abaixo:
 
@@ -71,7 +67,7 @@ Contribuições são bem-vindas! Siga os passos abaixo:
    ```
 5. Abra um **Pull Request** no GitHub.
 
-## 📄 Licença
+# 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
