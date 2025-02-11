@@ -129,7 +129,6 @@ section span {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%) rotate(90deg);
     font-size: 40px;
     color: #fff;
     cursor: pointer;
@@ -138,15 +137,9 @@ section span {
 
 @keyframes float {
     0%, 100% {
-        transform: rotate(90deg) translateX(0);
+        transform: translateY(-50%);
     }
     50% {
-        transform: rotate(90deg) translateX(-10px);
+        transform: translateY(-100px);
     }
-}
-
-#next-section {
-    padding: 50px;
-    background-color: #f0f0f0;
-    margin-top: 50px;
 }

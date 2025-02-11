@@ -1,3 +1,8 @@
+#next-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
 .features-section {
     padding: 60px 20px;
     text-align: center;
@@ -36,7 +41,7 @@
 }
 
 .feature-card:hover {
-    background-color: #a6374b;
+    background-color: #ba3f56;
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

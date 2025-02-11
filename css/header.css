@@ -13,6 +13,7 @@ header a {
     flex-flow: wrap;
     overflow: hidden;
     flex-direction: row;
+    z-index: 1000;
 }
 
 header .logo {
@@ -32,7 +33,7 @@ header img {
 
 header a:hover {
     background-color: #b63f54;
-    transition: all 0.5s;
+    transition: all 0.3s;
     height: 100%;
     transform: scale(1.1);
 }
