@@ -1,0 +1,118 @@
+.suporte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    height: 50vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Para posicionar a imagem */
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    width: 75%;
+}
+
+.discord-card {
+    background-color: #c5435a; /* Cor do Discord */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    position: relative; 
+    z-index: 1;
+}
+
+.discord-card:hover {
+    background-color: #c5435a;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.discord-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.discord-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#card-discord {
+    cursor: pointer;
+    background-color: #c5435a;
+    color: #fff;
+}
+
+.discord-card a {
+    display: inline-block;
+    background-color: #fff;
+    color: #c5435a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.discord-card a:hover {
+    background-color: #f0f0f0;
+    color: #5865F2;
+}
+
+/* Imagem sobreposta */
+.discord-image {
+    position: absolute;
+    top: -14.4vh;
+    right: 20px;
+    z-index: 2;
+}
+
+.discord-image img {
+    width: 100px; /* Tamanho da imagem */
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); /* Sombra sutil */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        margin-bottom: 30px;
+    }
+
+    .discord-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .discord-image {
+        top: -30px; /* Ajuste para telas menores */
+        right: 50%; /* Centraliza a imagem */
+        transform: translateX(50%); /* Ajuste fino para centralizar */
+    }
+}
