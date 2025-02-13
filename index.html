@@ -24,15 +24,15 @@
 
 <body class="body">
     <header>
-
-        <a href="#" class="logo"> MatMindAI </a>
-        <a href="#next-section"> <img src="/assets/construir.png"> Recursos </a>
-        <a href="#suporte"> <img src="/assets/discord.png"> Suporte </a>
-        <a href="#comandos"> <img src="/assets/command.png"> Comandos </a>
-        <a href="#equipe"> <img src="/assets/shuttle.png"> Equipe </a>
-        <a href="#bg-dark"> <img src="/assets/moon.png"> </a>
-        <a href="#menu-hamburger"> <img src="/assets/menu.png"> </a>
-
+        <nav>
+            <a href="#" class="logo"> MatMindAI </a>
+            <a href="#next-section"> <img src="/assets/construir.png"> Recursos </a>
+            <a href="#suporte"> <img src="/assets/discord.png"> Suporte </a>
+            <a href="#comandos"> <img src="/assets/command.png"> Comandos </a>
+            <a href="#equipe"> <img src="/assets/shuttle.png"> Equipe </a>
+            <a href="#bg-dark"> <img src="/assets/moon.png"> </a>
+            <a href="#menu-hamburger"> <img src="/assets/menu.png"> </a>
+        </nav>
     </header>
 
     <section>
@@ -97,7 +97,6 @@
 
 
     <div class="suporte" id="suporte">
-        <!-- Conteúdo à esquerda -->
         <div class="content">
             <h2>Suporte no Discord</h2>
             <p>
@@ -107,10 +106,8 @@
             </p>
         </div>
 
-        <!-- Card de convite à direita -->
         <a href="https://discord.gg/MAc2Fya37m" id="card-discord">
             <div class="discord-card">
-                <!-- Imagem sobreposta -->
                 <div class="discord-image">
                     <img src="/assets/nagato.jpg" alt="Imagem decorativa">
                 </div>
@@ -124,7 +121,6 @@
 
 
     <div class="transform-section">
-        <!-- Conteúdo (Título, Descrição, Botão) -->
         <div class="transform-content">
             <h2>Transforme o seu servidor em um lugar fantástico!</h2>
             <p>Todos os servidores no Discord encontram os mesmos problemas. Membros querem entretenimento, moderadores
@@ -139,7 +135,6 @@
             <a href="https://discord.com/oauth2/authorize?client_id=1337750761882521600"><button class="btn">+ Adicionar
                     ao Discord</button></a>
         </div>
-        <!-- Imagem ou Ilustração -->
         <div class="transform-image">
             <img src="/assets/nagato-content.png" alt="Ilustração de um personagem">
         </div>
@@ -148,6 +143,9 @@
 
     <div class="container" id="comandos">
         <div class="commands-section">
+            <button class="copy-button" onclick="copyCommands()">
+                <i class="fas fa-copy"></i>
+            </button>
             <pre><code>
 <span class="command">/olá</span> -
 <span class="output">Exemplo: /ola</span>
@@ -175,16 +173,22 @@
             </code></pre>
         </div>
 
-        <!-- Lado direito: Título, texto e botões -->
         <div class="info-section">
             <h2>Comandos</h2>
             <p>Explore todos os comandos disponíveis do nosso bot e descubra como ele pode facilitar a sua vida no
                 Discord.</p>
             <div class="buttons">
-                <button class="btn btn-primary">Baixar PDF ⇩</button>
-                <button class="btn btn-outline">Documentação</button>
+                <a href="/assets/commands.pdf" download="commands.pdf"><button class="btn btn-primary">Baixar PDF
+                        ⇩</button></a>
+                <a href="https://discord.com/developers/docs/resources/webhook"><button
+                        class="btn btn-outline">Documentação</button></a>
             </div>
         </div>
+    </div>
+
+    <div id="copyMessage" class="copy-message" style="display: none;">
+        <i class="fas fa-check"></i> Texto Copiado
+        <div class="progress-bar"></div>
     </div>
 
 
@@ -227,10 +231,11 @@
 
 
 
-    <script src="/js/scroll-arrow.js"></script>
+    <script src="/js/header.js"></script>
     <script src="/js/scroll-arrow.js"></script>
     <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
     <script src="/js/lenis.js"></script>
+    <script src="/js/cmd.js"></script>
     <script src="/js/fade.js"></script>
 </body>
 

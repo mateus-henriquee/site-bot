@@ -47,7 +47,7 @@ section span {
 .home h1, .home span, .home p {
     opacity: 0;
     transform: translateX(100%);
-    animation: slideIn 0.95s forwards;
+    animation: entradaAnimation 0.95s forwards;
 }
 
 .home h1 {
@@ -63,7 +63,7 @@ section span {
     animation-delay: 1.5s;
 }
 
-@keyframes slideIn {
+@keyframes entradaAnimation {
     to {
         opacity: 1;
         transform: translateX(0);

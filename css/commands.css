@@ -1,28 +1,26 @@
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 1200px;
     width: 100%;
-    height: 70vh;
     background-color: #2d2d2d;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
+/* Lado esquerdo: Comandos no estilo CMD */
 .commands-section {
     flex: 1;
-    height: 100%;
     padding: 20px;
     background-color: #1e1e1e;
     border-right: 2px solid #444;
+    position: relative; /* Para posicionar o botão de copiar */
 }
 
 .commands-section pre {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
-    color: #ff006a;
+    color: #00ff00; /* Cor verde para o estilo de terminal */
     margin: 0;
 }
 
@@ -32,11 +30,81 @@
 }
 
 .commands-section pre code .command {
-    color: #ff006a;
+    color: #00ff00;
 }
 
 .commands-section pre code .output {
     color: #ccc;
+}
+
+/* Botão de copiar */
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #a6374b;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.commands-section:hover .copy-button {
+    background-color: #313131;
+    border: solid 1px #444;
+    opacity: 1;
+}
+
+.copy-button:hover {
+    color: #8a2c3d; /* Escurece o ícone ao passar o mouse */
+}
+
+/* Mensagem de "Texto Copiado" */
+.copy-message {
+    position: fixed;
+    bottom: 20px;
+    left: -100%; /* Inicialmente fora da tela */
+    background-color: #4caf50; /* Verde */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    animation: slideIn 0.5s forwards, slideOut 0.5s 3s forwards;
+}
+
+.copy-message .progress-bar {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: progress 3s linear forwards;
+}
+
+@keyframes slideIn {
+    to {
+        left: 20px;
+    }
+}
+
+@keyframes slideOut {
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes progress {
+    to {
+        width: 0;
+    }
 }
 
 .info-section {
@@ -64,6 +132,7 @@
 .info-section .buttons {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .info-section .buttons .btn {
@@ -94,7 +163,6 @@
     color: #fff;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

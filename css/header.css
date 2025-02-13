@@ -1,5 +1,5 @@
-header,
-header a {
+nav,
+nav a {
     color: #fff;
     background-color: #c5435a;
     height: 100%;
@@ -16,22 +16,22 @@ header a {
     z-index: 1000;
 }
 
-header .logo {
+nav .logo {
     font-size: 3vh;
     font-family: "Permanent Marker", serif;
 }
 
-header a {
+nav a {
     height: 100%;
 }
 
-header img {
+nav img {
     margin-right: 0.7em;
     width: 1.3em;
     height: 1.25em;
 }
 
-header a:hover {
+nav a:hover {
     transition: all 0.2s;
     height: 100%;
     transform: scale(0.97);
