@@ -32,8 +32,7 @@ header img {
 }
 
 header a:hover {
-    background-color: #b63f54;
-    transition: all 0.3s;
+    transition: all 0.2s;
     height: 100%;
-    transform: scale(1.1);
+    transform: scale(0.97);
 }
